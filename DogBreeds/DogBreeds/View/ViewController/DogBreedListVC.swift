@@ -35,6 +35,7 @@ final class DogBreedListVC: UIViewController {
     }
     
     private func fetchBreedList() {
+        breedViewModel.fetchDogsBreedFromDatabase()
         breedViewModel.fetchDogsBreedList()
     }
     

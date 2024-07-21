@@ -45,11 +45,21 @@ class BreedListViewModel {
             do {
                 let breedListResponse: DogBreedModel = try await apiManager.getDogBreeds()
                 self.breedsList = breedListResponse
+                DogsBreedsManager.shared.checkAndSaveDogsBreed(dogBreedModel: breedListResponse)
                 breedsListCopy = breedListResponse.copy() as? DogBreedModel
             } catch {
                 print(error)
             }
         }
+    }
+    
+    func fetchDogsBreedFromDatabase() {
+        let dogBreedList = DogsBreedsManager.shared.fetchAllDogBreeds()
+        let breedListResponse = DogBreedModel()
+        breedListResponse.breedModel = dogBreedList
+        self.breedsList = breedListResponse
+        DogsBreedsManager.shared.checkAndSaveDogsBreed(dogBreedModel: breedListResponse)
+        breedsListCopy = breedListResponse.copy() as? DogBreedModel
     }
     
     /// Method used to fetch Dogs List Based on selected Breed.

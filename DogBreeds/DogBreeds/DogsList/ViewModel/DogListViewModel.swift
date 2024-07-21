@@ -25,11 +25,23 @@ class DogListViewModel {
     @MainActor func fetchDogsList(breed: String) {
         Task {
             do {
-                let breedResponse: DogsListModel = try await apiManager.getDogBreedsImages(url: ApiEndpoints.dogsList(breed).url, breedName: breed)
-                dogs = breedResponse
+                let dogsResponse: DogsListModel = try await apiManager.getDogBreedsImages(url: ApiEndpoints.dogsList(breed).url, breedName: breed)
+                if let selectedBreeds = selectedBreeds {
+                    DogsImageDataManager.shared.checkAndSaveDogList(breedName: selectedBreeds, images: dogsResponse.dogsList)
+                }
+                dogs = dogsResponse
             } catch {
                 print(error)
             }
+        }
+    }
+    
+    func fetchDogsListFromDataBase() {
+        if let selectedBreeds = selectedBreeds {
+            let imageList: [String] = DogsImageDataManager.shared.fetchDogImageData(byBreedName: selectedBreeds)
+            let dogsResponse = DogsListModel()
+            dogsResponse.dogsList = imageList
+            dogs = dogsResponse
         }
     }
 }

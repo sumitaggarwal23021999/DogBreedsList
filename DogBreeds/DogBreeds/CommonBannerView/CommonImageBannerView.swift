@@ -52,7 +52,7 @@ final class CommonImageBannerView: UIView {
             pagerViewHeightConstraint.constant = 150.0
             vwPager.automaticSlidingInterval = CGFloat((duration/1000));
             vwPager.isInfinite = true;
-            vwPager.itemSize = CGSize(width: frame.width, height: vwPager.frame.size.height);
+            vwPager.itemSize = CGSize(width: frame.width - 40.0, height: vwPager.frame.size.height);
             pageControl.numberOfPages = dogsListModel?.dogsList.count ?? 0;
             pageControl.contentHorizontalAlignment = .center;
             pageControl.contentInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20);

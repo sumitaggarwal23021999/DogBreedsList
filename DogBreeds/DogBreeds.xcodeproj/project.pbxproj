@@ -36,6 +36,10 @@
 		EE08EBD72C4D47D900362BD0 /* ApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EBD42C4D47D800362BD0 /* ApiEndpoints.swift */; };
 		EE08EBD82C4D47D900362BD0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EBD52C4D47D800362BD0 /* UIViewControllerExtension.swift */; };
 		EE08EBD92C4D47D900362BD0 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EBD62C4D47D800362BD0 /* APIHandler.swift */; };
+		EE08EBE32C4D7B4B00362BD0 /* DogsData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE08EBE12C4D7B4B00362BD0 /* DogsData.xcdatamodeld */; };
+		EE08EBE62C4D7EA000362BD0 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EBE52C4D7EA000362BD0 /* CoreDataHelper.swift */; };
+		EE08EBE82C4D808600362BD0 /* DogsBreedsCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EBE72C4D808600362BD0 /* DogsBreedsCoreDataManager.swift */; };
+		EE08EBEB2C4D843200362BD0 /* DogsImageCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EBEA2C4D843200362BD0 /* DogsImageCoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +75,10 @@
 		EE08EBD42C4D47D800362BD0 /* ApiEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpoints.swift; sourceTree = "<group>"; };
 		EE08EBD52C4D47D800362BD0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		EE08EBD62C4D47D800362BD0 /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		EE08EBE22C4D7B4B00362BD0 /* DogsData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DogsData.xcdatamodel; sourceTree = "<group>"; };
+		EE08EBE52C4D7EA000362BD0 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		EE08EBE72C4D808600362BD0 /* DogsBreedsCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsBreedsCoreDataManager.swift; sourceTree = "<group>"; };
+		EE08EBEA2C4D843200362BD0 /* DogsImageCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsImageCoreDataManager.swift; sourceTree = "<group>"; };
 		F65791DB2EA20C95B4A7A938 /* Pods-DogBreeds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogBreeds.debug.xcconfig"; path = "Target Support Files/Pods-DogBreeds/Pods-DogBreeds.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +140,7 @@
 				EE08EB872C4CE6EA00362BD0 /* Alerts */,
 				EE08EBA82C4D043800362BD0 /* Helper */,
 				EE08EB862C4CE5CF00362BD0 /* AppDelegate */,
+				EE08EBE42C4D7E8500362BD0 /* CoreDataHelper */,
 				EE08EBD32C4D47D800362BD0 /* ApiHandling */,
 				EE08EB6D2C4CE48F00362BD0 /* Info.plist */,
 			);
@@ -187,6 +196,7 @@
 				EE08EB8F2C4CEABE00362BD0 /* ViewModel */,
 				EE08EB912C4CEABE00362BD0 /* Model */,
 				EE08EB932C4CEABE00362BD0 /* View */,
+				EE08EBE92C4D808D00362BD0 /* DatabaseHandler */,
 				EE08EB982C4CEABE00362BD0 /* Services */,
 			);
 			name = DogBreedList;
@@ -294,6 +304,7 @@
 				EE08EBC12C4D43FB00362BD0 /* Model */,
 				EE08EBC32C4D43FB00362BD0 /* View */,
 				EE08EBC92C4D43FB00362BD0 /* Services */,
+				EE08EBEC2C4D844100362BD0 /* DatabaseHandling */,
 			);
 			path = DogsList;
 			sourceTree = "<group>";
@@ -355,6 +366,31 @@
 				EE08EBD62C4D47D800362BD0 /* APIHandler.swift */,
 			);
 			path = ApiHandling;
+			sourceTree = "<group>";
+		};
+		EE08EBE42C4D7E8500362BD0 /* CoreDataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				EE08EBE12C4D7B4B00362BD0 /* DogsData.xcdatamodeld */,
+				EE08EBE52C4D7EA000362BD0 /* CoreDataHelper.swift */,
+			);
+			path = CoreDataHelper;
+			sourceTree = "<group>";
+		};
+		EE08EBE92C4D808D00362BD0 /* DatabaseHandler */ = {
+			isa = PBXGroup;
+			children = (
+				EE08EBE72C4D808600362BD0 /* DogsBreedsCoreDataManager.swift */,
+			);
+			path = DatabaseHandler;
+			sourceTree = "<group>";
+		};
+		EE08EBEC2C4D844100362BD0 /* DatabaseHandling */ = {
+			isa = PBXGroup;
+			children = (
+				EE08EBEA2C4D843200362BD0 /* DogsImageCoreDataManager.swift */,
+			);
+			path = DatabaseHandling;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,7 +513,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE08EBD92C4D47D900362BD0 /* APIHandler.swift in Sources */,
+				EE08EBE62C4D7EA000362BD0 /* CoreDataHelper.swift in Sources */,
 				EE08EBAA2C4D044B00362BD0 /* UIViewExtension.swift in Sources */,
+				EE08EBEB2C4D843200362BD0 /* DogsImageCoreDataManager.swift in Sources */,
 				EE08EB832C4CE5B000362BD0 /* Constant.swift in Sources */,
 				EE08EBB32C4D321700362BD0 /* SearchTableHeaderView.swift in Sources */,
 				EE08EBB02C4D067B00362BD0 /* BannerTableReusableView.swift in Sources */,
@@ -490,8 +528,10 @@
 				EE08EB9D2C4CEABE00362BD0 /* DogBreedListVC.swift in Sources */,
 				EE08EBA72C4D032400362BD0 /* DogsListModel.swift in Sources */,
 				EE08EBD82C4D47D900362BD0 /* UIViewControllerExtension.swift in Sources */,
+				EE08EBE32C4D7B4B00362BD0 /* DogsData.xcdatamodeld in Sources */,
 				EE08EB9C2C4CEABE00362BD0 /* BreedListTVC.swift in Sources */,
 				EE08EBD02C4D43FB00362BD0 /* DogsListVC.swift in Sources */,
+				EE08EBE82C4D808600362BD0 /* DogsBreedsCoreDataManager.swift in Sources */,
 				EE08EB9A2C4CEABE00362BD0 /* BreedListViewModel.swift in Sources */,
 				EE08EBBD2C4D398D00362BD0 /* CommonImageBannerView.swift in Sources */,
 				EE08EBD22C4D43FB00362BD0 /* DogsImageListAPIManager.swift in Sources */,
@@ -721,6 +761,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE08EBE12C4D7B4B00362BD0 /* DogsData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE08EBE22C4D7B4B00362BD0 /* DogsData.xcdatamodel */,
+			);
+			currentVersion = EE08EBE22C4D7B4B00362BD0 /* DogsData.xcdatamodel */;
+			path = DogsData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EE08EB542C4CE48E00362BD0 /* Project object */;
 }

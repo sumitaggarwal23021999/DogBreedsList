@@ -15,6 +15,7 @@ final class DogsListVC: UIViewController {
     // MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.selectedBreeds = breedString
         setNavigationTitle()
         registerCellsForDogsList()
         viewModel.dogsDelegate = self
@@ -34,6 +35,7 @@ final class DogsListVC: UIViewController {
         if
             let breedString = breedString
         {
+            viewModel.fetchDogsListFromDataBase()
             viewModel.fetchDogsList(breed: breedString)
         }
     }
