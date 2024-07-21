@@ -12,9 +12,6 @@
 		EE08EB672C4CE48E00362BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE08EB652C4CE48E00362BD0 /* Main.storyboard */; };
 		EE08EB692C4CE48F00362BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE08EB682C4CE48F00362BD0 /* Assets.xcassets */; };
 		EE08EB6C2C4CE48F00362BD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE08EB6A2C4CE48F00362BD0 /* LaunchScreen.storyboard */; };
-		EE08EB7E2C4CE59F00362BD0 /* ApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EB7B2C4CE59F00362BD0 /* ApiEndpoints.swift */; };
-		EE08EB7F2C4CE59F00362BD0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EB7C2C4CE59F00362BD0 /* UIViewControllerExtension.swift */; };
-		EE08EB802C4CE59F00362BD0 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EB7D2C4CE59F00362BD0 /* APIHandler.swift */; };
 		EE08EB832C4CE5B000362BD0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EB822C4CE5B000362BD0 /* Constant.swift */; };
 		EE08EB8A2C4CE6EA00362BD0 /* AlertEssentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EB882C4CE6EA00362BD0 /* AlertEssentials.swift */; };
 		EE08EB8B2C4CE6EA00362BD0 /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EB892C4CE6EA00362BD0 /* AlertMessages.swift */; };
@@ -36,6 +33,9 @@
 		EE08EBCF2C4D43FB00362BD0 /* DogsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EBC62C4D43FB00362BD0 /* DogsCVC.swift */; };
 		EE08EBD02C4D43FB00362BD0 /* DogsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EBC82C4D43FB00362BD0 /* DogsListVC.swift */; };
 		EE08EBD22C4D43FB00362BD0 /* DogsImageListAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EBCB2C4D43FB00362BD0 /* DogsImageListAPIManager.swift */; };
+		EE08EBD72C4D47D900362BD0 /* ApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EBD42C4D47D800362BD0 /* ApiEndpoints.swift */; };
+		EE08EBD82C4D47D900362BD0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EBD52C4D47D800362BD0 /* UIViewControllerExtension.swift */; };
+		EE08EBD92C4D47D900362BD0 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08EBD62C4D47D800362BD0 /* APIHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +47,6 @@
 		EE08EB682C4CE48F00362BD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE08EB6B2C4CE48F00362BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE08EB6D2C4CE48F00362BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE08EB7B2C4CE59F00362BD0 /* ApiEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpoints.swift; sourceTree = "<group>"; };
-		EE08EB7C2C4CE59F00362BD0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
-		EE08EB7D2C4CE59F00362BD0 /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		EE08EB822C4CE5B000362BD0 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		EE08EB882C4CE6EA00362BD0 /* AlertEssentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertEssentials.swift; sourceTree = "<group>"; };
 		EE08EB892C4CE6EA00362BD0 /* AlertMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
@@ -71,6 +68,9 @@
 		EE08EBC62C4D43FB00362BD0 /* DogsCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsCVC.swift; sourceTree = "<group>"; };
 		EE08EBC82C4D43FB00362BD0 /* DogsListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsListVC.swift; sourceTree = "<group>"; };
 		EE08EBCB2C4D43FB00362BD0 /* DogsImageListAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsImageListAPIManager.swift; sourceTree = "<group>"; };
+		EE08EBD42C4D47D800362BD0 /* ApiEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpoints.swift; sourceTree = "<group>"; };
+		EE08EBD52C4D47D800362BD0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		EE08EBD62C4D47D800362BD0 /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		F65791DB2EA20C95B4A7A938 /* Pods-DogBreeds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogBreeds.debug.xcconfig"; path = "Target Support Files/Pods-DogBreeds/Pods-DogBreeds.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,23 +130,12 @@
 				EE08EB842C4CE5B500362BD0 /* Resource */,
 				EE08EB812C4CE5B000362BD0 /* Constant */,
 				EE08EB872C4CE6EA00362BD0 /* Alerts */,
-				EE08EB7A2C4CE59F00362BD0 /* ApiHandling */,
 				EE08EBA82C4D043800362BD0 /* Helper */,
 				EE08EB862C4CE5CF00362BD0 /* AppDelegate */,
+				EE08EBD32C4D47D800362BD0 /* ApiHandling */,
 				EE08EB6D2C4CE48F00362BD0 /* Info.plist */,
 			);
 			path = DogBreeds;
-			sourceTree = "<group>";
-		};
-		EE08EB7A2C4CE59F00362BD0 /* ApiHandling */ = {
-			isa = PBXGroup;
-			children = (
-				EE08EB7B2C4CE59F00362BD0 /* ApiEndpoints.swift */,
-				EE08EB7C2C4CE59F00362BD0 /* UIViewControllerExtension.swift */,
-				EE08EB7D2C4CE59F00362BD0 /* APIHandler.swift */,
-			);
-			name = ApiHandling;
-			path = ../../Project/DogBreeds/DogBreed_iOS/DogBreed_iOS/ApiHandling;
 			sourceTree = "<group>";
 		};
 		EE08EB812C4CE5B000362BD0 /* Constant */ = {
@@ -358,6 +347,16 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		EE08EBD32C4D47D800362BD0 /* ApiHandling */ = {
+			isa = PBXGroup;
+			children = (
+				EE08EBD42C4D47D800362BD0 /* ApiEndpoints.swift */,
+				EE08EBD52C4D47D800362BD0 /* UIViewControllerExtension.swift */,
+				EE08EBD62C4D47D800362BD0 /* APIHandler.swift */,
+			);
+			path = ApiHandling;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -477,20 +476,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE08EBD92C4D47D900362BD0 /* APIHandler.swift in Sources */,
 				EE08EBAA2C4D044B00362BD0 /* UIViewExtension.swift in Sources */,
-				EE08EB7E2C4CE59F00362BD0 /* ApiEndpoints.swift in Sources */,
 				EE08EB832C4CE5B000362BD0 /* Constant.swift in Sources */,
 				EE08EBB32C4D321700362BD0 /* SearchTableHeaderView.swift in Sources */,
 				EE08EBB02C4D067B00362BD0 /* BannerTableReusableView.swift in Sources */,
 				EE08EBCF2C4D43FB00362BD0 /* DogsCVC.swift in Sources */,
 				EE08EB8A2C4CE6EA00362BD0 /* AlertEssentials.swift in Sources */,
+				EE08EBD72C4D47D900362BD0 /* ApiEndpoints.swift in Sources */,
 				EE08EB9E2C4CEABE00362BD0 /* BreedListAPIManager.swift in Sources */,
 				EE08EB9B2C4CEABE00362BD0 /* DogBreedModel.swift in Sources */,
-				EE08EB802C4CE59F00362BD0 /* APIHandler.swift in Sources */,
 				EE08EBCC2C4D43FB00362BD0 /* DogListViewModel.swift in Sources */,
-				EE08EB7F2C4CE59F00362BD0 /* UIViewControllerExtension.swift in Sources */,
 				EE08EB9D2C4CEABE00362BD0 /* DogBreedListVC.swift in Sources */,
 				EE08EBA72C4D032400362BD0 /* DogsListModel.swift in Sources */,
+				EE08EBD82C4D47D900362BD0 /* UIViewControllerExtension.swift in Sources */,
 				EE08EB9C2C4CEABE00362BD0 /* BreedListTVC.swift in Sources */,
 				EE08EBD02C4D43FB00362BD0 /* DogsListVC.swift in Sources */,
 				EE08EB9A2C4CEABE00362BD0 /* BreedListViewModel.swift in Sources */,
