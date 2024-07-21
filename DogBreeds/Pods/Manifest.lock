@@ -1,0 +1,22 @@
+PODS:
+  - FSPagerView (0.8.3)
+  - SDWebImage (5.19.2):
+    - SDWebImage/Core (= 5.19.2)
+  - SDWebImage/Core (5.19.2)
+
+DEPENDENCIES:
+  - FSPagerView
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - FSPagerView
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  SDWebImage: dfe95b2466a9823cf9f0c6d01217c06550d7b29a
+
+PODFILE CHECKSUM: 5af73783df613b2863f498586fc6f52f33214454
+
+COCOAPODS: 1.15.2
