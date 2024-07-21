@@ -15,6 +15,7 @@ final class DogBreedListVC: UIViewController {
     var breedViewModel = BreedListViewModel()
     var breedListType: BreedListType = .breedList
     weak var delegate: DogBreedListVCDelegate?
+    var breedNameForBannerData: String = "african"
     
     // MARK: - Life Cycle Methods
     override func viewDidLoad() {
@@ -40,7 +41,8 @@ final class DogBreedListVC: UIViewController {
     }
     
     private func fetchBannerData() {
-        breedViewModel.fetchDogsList(breed: "african")
+        breedViewModel.fetchDogsListFromDatabase(breed: breedNameForBannerData)
+        breedViewModel.fetchDogsList(breed: breedNameForBannerData)
     }
     
     private func navigateToDogsList(breed: String?) {

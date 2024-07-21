@@ -68,6 +68,7 @@ class BreedListViewModel {
             do {
                 let bannerData: DogsListModel = try await apiManager.getDogBreedsImages(url: ApiEndpoints.dogsList(breed).url, breedName: breed)
                 self.bannerData = bannerData
+                DogsImageDataManager.shared.checkAndSaveDogList(breedName: breed, images: bannerData.dogsList)
                 if bannerData.dogsList.count > 10 {
                     self.bannerData?.dogsList = Array(bannerData.dogsList[0...10])
                 }
@@ -75,6 +76,16 @@ class BreedListViewModel {
                 print(error)
             }
         }
+    }
+    
+    func fetchDogsListFromDatabase(breed: String) {
+        let imageList: [String] = DogsImageDataManager.shared.fetchDogImageData(byBreedName: breed)
+        let dogsResponse = DogsListModel()
+        dogsResponse.dogsList = imageList
+        if dogsResponse.dogsList.count > 10 {
+            dogsResponse.dogsList = Array(dogsResponse.dogsList[0...10])
+        }
+        bannerData = dogsResponse
     }
     
     private func filterDogBreed() {
