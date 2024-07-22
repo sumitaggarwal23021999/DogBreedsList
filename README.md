@@ -13,11 +13,11 @@ This project is an iOS application that displays a list of dog breeds. When a us
 
 ## Screenshots
 
-![App Screenshot](https://drive.google.com/file/d/1gBtp5Xg9UELEWP6Yebg9IpAuD94Egjrn/view?usp=sharing)
+![App ScreenSHot](https://github.com/user-attachments/assets/e14c7dc6-f933-43b5-9cd4-a5dc3fde2ae3)
 
-![App Screenshot](https://drive.google.com/file/d/1CeBS8c0hGGoy4z0Dd773rXrcwVsrI6_t/view?usp=sharing)
+![App Screenshot](https://github.com/user-attachments/assets/79ad6e15-ef1f-4132-8152-721f0f79877d)
 
-![App Screenshot](https://drive.google.com/file/d/1WUb-ewfiGysEj721FajUwXCR9AXPx2yX/view?usp=sharing)
+![App Screenshot](https://github.com/user-attachments/assets/467614b0-336a-439d-93e3-fdc24067888c)
 
 
 ## Requirements
