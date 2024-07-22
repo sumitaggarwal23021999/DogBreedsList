@@ -1,12 +1,16 @@
 import Foundation
 import CoreData
 
+// MARK: - Class DogsBreedsManager
 class DogsBreedsManager {
     
+    // MARK: - Static Shared Variable
     static let shared = DogsBreedsManager()
     
+    // MARK: - Private Constructor
     private init() {}
     
+    /// Method used to check if data is already available or not in database, if yes will do nothing otherwise will add data to the database.
     func checkAndSaveDogsBreed(dogBreedModel: DogBreedModel) {
         if fetchAllDogBreeds().isEmpty {
             _ = dogBreedModel.breedModel.map({

@@ -2,6 +2,7 @@ import UIKit
 import FSPagerView
 import SDWebImage
 
+// MARK: - Class CommonImageBannerViews
 final class CommonImageBannerView: UIView {
     
     // MARK: - IBOutlet
@@ -56,7 +57,6 @@ final class CommonImageBannerView: UIView {
             pageControl.numberOfPages = dogsListModel?.dogsList.count ?? 0;
             pageControl.contentHorizontalAlignment = .center;
             pageControl.contentInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20);
-//            pagerView.decel = 2
             vwPager.interitemSpacing = 12;
             vwPager.layer.cornerRadius = 10;
         } else {
@@ -81,14 +81,9 @@ final class CommonImageBannerView: UIView {
             trailingMargin: trailingMargin
         )
     }
-    
-    // Method used to update the duration of banner view auto slide
-    @objc func updateDuration(duration: Int) {
-        debugPrint("Banner view duration updated to \(duration)")
-        vwPager.automaticSlidingInterval = CGFloat((duration/1000))
-    }
 }
 
+// MARK: - Extension FSPagerViewDelegate, FSPagerViewDataSource
 extension CommonImageBannerView: FSPagerViewDelegate, FSPagerViewDataSource {
     func numberOfItems(in pagerView: FSPagerView) -> Int {
         dogsListModel?.dogsList.count ?? 0

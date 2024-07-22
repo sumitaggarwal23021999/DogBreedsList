@@ -10,7 +10,6 @@ final class DogsCVC: UICollectionViewCell {
     }
     
     // MARK: - Private IBOutlet
-    @IBOutlet private weak var btnFavourite: UIButton!
     @IBOutlet private weak var dogImageView: UIImageView!
     
     // MARK: Varibale

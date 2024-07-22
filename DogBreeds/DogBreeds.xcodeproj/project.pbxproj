@@ -301,7 +301,6 @@
 			isa = PBXGroup;
 			children = (
 				EE08EBBF2C4D43FB00362BD0 /* ViewModel */,
-				EE08EBC12C4D43FB00362BD0 /* Model */,
 				EE08EBC32C4D43FB00362BD0 /* View */,
 				EE08EBC92C4D43FB00362BD0 /* Services */,
 				EE08EBEC2C4D844100362BD0 /* DatabaseHandling */,
@@ -315,13 +314,6 @@
 				EE08EBC02C4D43FB00362BD0 /* DogListViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		EE08EBC12C4D43FB00362BD0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		EE08EBC32C4D43FB00362BD0 /* View */ = {

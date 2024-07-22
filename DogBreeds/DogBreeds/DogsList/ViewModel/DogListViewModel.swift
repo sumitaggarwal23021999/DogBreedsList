@@ -36,6 +36,7 @@ class DogListViewModel {
         }
     }
     
+    /// Method used to fetch dogs list from database for specific breed.
     func fetchDogsListFromDataBase() {
         if let selectedBreeds = selectedBreeds {
             let imageList: [String] = DogsImageDataManager.shared.fetchDogImageData(byBreedName: selectedBreeds)

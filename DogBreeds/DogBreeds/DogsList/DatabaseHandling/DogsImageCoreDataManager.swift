@@ -1,12 +1,20 @@
 import Foundation
 import CoreData
 
+// MARK: - Class DogsImageDataManager
 class DogsImageDataManager {
     
+    // MARK: - Static Shared Variable
     static let shared = DogsImageDataManager()
     
+    // MARK: - Private Constaructor
     private init() {}
     
+    
+    /// Method used to check if dog list is available for the breed in database, if yes will do nothing, otherwise will save data to database
+    /// - Parameters:
+    ///   - breedName: breed name for which dogs images are available
+    ///   - images: dog images.
     func checkAndSaveDogList(breedName: String, images: [String]) {
         if fetchDogImageData(byBreedName: breedName).isEmpty {
             _ = images.map({

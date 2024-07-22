@@ -5,7 +5,6 @@ import SDWebImage
 final class DogsListVC: UIViewController {
     
     // MARK: - IBOutlet
-    @IBOutlet private weak var barBtnFilterBreed: UIBarButtonItem!
     @IBOutlet private weak var collectionVwDogImageList: UICollectionView!
     
     // MARK: - Variables
@@ -27,7 +26,6 @@ final class DogsListVC: UIViewController {
         if let breedString = breedString
         {
             navigationItem.title = "\(breedString)"
-            barBtnFilterBreed.isHidden = true
         }
     }
     

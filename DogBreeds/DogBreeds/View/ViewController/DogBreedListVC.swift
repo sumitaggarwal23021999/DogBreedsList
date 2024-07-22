@@ -56,12 +56,14 @@ final class DogBreedListVC: UIViewController {
 extension DogBreedListVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        /// One section for Banner List and another for Search and Bread List.
         2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
+            /// Returning 0 because we only want header for showing banners.
             return 0
         case 1:
             return breedViewModel.breedsListCopy?.breedModel.count ?? 0

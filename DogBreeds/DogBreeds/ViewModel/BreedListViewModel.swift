@@ -53,6 +53,7 @@ class BreedListViewModel {
         }
     }
     
+    /// Method used to get the dogs breed list form database.
     func fetchDogsBreedFromDatabase() {
         let dogBreedList = DogsBreedsManager.shared.fetchAllDogBreeds()
         let breedListResponse = DogBreedModel()
